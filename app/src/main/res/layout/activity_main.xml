@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/topBanner"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/devslopesbanner" />
+
+    <ImageView
+        android:id="@+id/devsloptoplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/devslopesprofilelogo" />
+
+    <TextView
+        android:id="@+id/devslopesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Devslopes"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/devsloptoplogo"
+        app:layout_constraintTop_toBottomOf="@+id/topBanner" />
+
+    <ImageView
+        android:id="@+id/imgCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFavourite"
+        app:layout_constraintEnd_toStartOf="@+id/imgFavourite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgFavourite"
+        app:srcCompat="@drawable/camerabutton" />
+
+    <ImageView
+        android:id="@+id/imgFavourite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgInbox"
+        app:layout_constraintEnd_toStartOf="@+id/imgInbox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgCamera"
+        app:layout_constraintTop_toTopOf="@+id/imgInbox"
+        app:srcCompat="@drawable/favoritebutton" />
+
+    <ImageView
+        android:id="@+id/imgInbox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgFavourite"
+        app:layout_constraintTop_toBottomOf="@+id/devsloptoplogo"
+        app:srcCompat="@drawable/inboxbutton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMobView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imgCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMobView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCamera"
+        app:srcCompat="@drawable/codeimage" />
+
+    <ImageView
+        android:id="@+id/imgData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guidelineMobView"
+        app:layout_constraintTop_toTopOf="@+id/imgCode"
+        app:srcCompat="@drawable/dataimage" />
+
+    <ImageView
+        android:id="@+id/imgImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMobView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/imgCode"
+        app:layout_constraintTop_toBottomOf="@+id/imgCode"
+        app:srcCompat="@drawable/imagesimage" />
+
+    <ImageView
+        android:id="@+id/imgVideos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/imgImage"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/imgData"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMobView"
+        app:layout_constraintTop_toBottomOf="@+id/imgData"
+        app:srcCompat="@drawable/videosimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
